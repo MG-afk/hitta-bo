@@ -21,4 +21,8 @@ describe('AppController (e2e)', () => {
       .expect(200)
       .expect({ message: 'It is just a message!' });
   });
+
+  afterAll(async () => {
+    await app.close();
+  });
 });
