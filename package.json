@@ -1,0 +1,8 @@
+{
+    "name": "hitta-bo",
+    "scripts": {
+      "dev:client": "npm run dev --prefix client",
+      "dev:server": "npm run start --prefix server"
+    },
+    "workspaces": ["client", "server"]
+}
