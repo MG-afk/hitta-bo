@@ -6,4 +6,9 @@ export class AppController {
   getGreeting(): { message: string } {
     return { message: 'It is just a message!' };
   }
+  
+  @Get('data')
+  getData(): { message: string } {
+    return {message: 'New data in coming!'};
+  }
 }
